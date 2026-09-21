@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="C'LOC - Locação de mini caçambas e equipamentos para obras. Monte seu orçamento e envie sua solicitação pelo WhatsApp."
+  >
+
+  <title>C'LOC | Locações de Equipamentos</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       CABEÇALHO
+       ========================================================= -->
+  <header class="header">
+    <div class="container header-content">
+
+      <!-- Logo da empresa -->
+      <a href="#inicio" class="brand" aria-label="C'LOC - Início">
+        <img
+          src="assets/logo-cloc.png"
+          alt="C'LOC - Locações de Mini Caçambas e Equipamentos para Obras"
+        >
+      </a>
+
+      <!-- Menu principal -->
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#equipamentos">Equipamentos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <!-- WhatsApp geral -->
+      <a
+        class="btn btn-whatsapp"
+        data-whatsapp-general
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+          <span class="eyebrow">LOCAÇÃO PARA OBRAS</span>
+
+          <h1>
+            Alugue seus equipamentos
+            <span>de forma simples.</span>
+          </h1>
+
+          <p>
+            Escolha os equipamentos disponíveis, informe a quantidade
+            e as diárias. O site calcula automaticamente o valor
+            estimado do seu orçamento.
+          </p>
+
+          <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#equipamentos">
+              Ver equipamentos
+            </a>
+
+            <a
+              class="btn btn-outline"
+              data-whatsapp-general
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Falar com a C'LOC
+            </a>
+
+          </div>
+
+          <div class="hero-notice">
+            <strong>Importante:</strong>
+            dependendo da quantidade de equipamentos e do período
+            de locação, o valor das diárias poderá ser negociado.
+          </div>
+
+        </div>
+
+
+        <!-- Elemento visual do hero -->
+        <div class="hero-visual">
+
+          <div class="hero-glow"></div>
+
+          <div class="hero-card">
+
+            <span>ORÇAMENTO ONLINE</span>
+
+            <strong>
+              Escolha<br>
+              Calcule<br>
+              Solicite
+            </strong>
+
+            <small>
+              Sem pagamento pelo site.
+            </small>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         EQUIPAMENTOS
+         ========================================================= -->
+    <section id="equipamentos" class="section equipment-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="eyebrow">CATÁLOGO</span>
+            <h2>Nossos equipamentos</h2>
+          </div>
+
+          <p>
+            Você pode adicionar vários equipamentos ao mesmo orçamento.
+          </p>
+
+        </div>
+
+
+        <!--
+          Os 10 cards são criados automaticamente pelo JavaScript.
+          Para editar os equipamentos, altere somente o array
+          EQUIPAMENTOS no arquivo script.js.
+        -->
+        <div id="equipmentGrid" class="equipment-grid"></div>
+
+
+        <!-- =====================================================
+             RESUMO DO ORÇAMENTO
+             ===================================================== -->
+        <div class="quote-summary">
+
+          <div class="quote-summary-info">
+
+            <span class="summary-label">
+              SEU ORÇAMENTO
+            </span>
+
+            <div class="summary-main">
+              <strong id="summaryItems">
+                0 equipamentos
+              </strong>
+
+              <span>•</span>
+
+              <strong id="summaryDays">
+                0 diárias
+              </strong>
+            </div>
+
+            <small>
+              Valor estimado. Períodos maiores podem ser negociados.
+            </small>
+
+          </div>
+
+
+          <div class="quote-total">
+
+            <span>VALOR ESTIMADO</span>
+
+            <strong id="summaryTotal">
+              R$ 0,00
+            </strong>
+
+          </div>
+
+
+          <button
+            id="continueQuoteBtn"
+            class="btn btn-primary btn-large"
+            type="button"
+          >
+            Continuar orçamento
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         COMO FUNCIONA
+         ========================================================= -->
+    <section id="como-funciona" class="section how-section">
+
+      <div class="container">
+
+        <div class="section-heading centered">
+
+          <span class="eyebrow">
+            SIMPLES E RÁPIDO
+          </span>
+
+          <h2>
+            Como funciona?
+          </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+          <article class="step">
+            <span class="step-number">01</span>
+            <h3>Escolha</h3>
+            <p>
+              Veja os equipamentos disponíveis e selecione os que precisa.
+            </p>
+          </article>
+
+
+          <article class="step">
+            <span class="step-number">02</span>
+            <h3>Defina as diárias</h3>
+            <p>
+              Informe a quantidade de equipamentos e os dias de locação.
+            </p>
+          </article>
+
+
+          <article class="step">
+            <span class="step-number">03</span>
+            <h3>Informe seus dados</h3>
+            <p>
+              Preencha nome, telefone, endereço da obra e cidade.
+            </p>
+          </article>
+
+
+          <article class="step">
+            <span class="step-number">04</span>
+            <h3>Envie a solicitação</h3>
+            <p>
+              Sua solicitação será encaminhada para a C'LOC pelo WhatsApp.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         DADOS DO CLIENTE
+         ========================================================= -->
+    <section id="cliente" class="section customer-section hidden">
+
+      <div class="container customer-layout">
+
+        <div class="customer-intro">
+
+          <span class="eyebrow">
+            FINALIZAR SOLICITAÇÃO
+          </span>
+
+          <h2>
+            Só falta seus dados.
+          </h2>
+
+          <p>
+            Nenhum pagamento será realizado pelo site.
+            Depois do envio, nossa equipe receberá a solicitação
+            e entrará em contato para confirmar o orçamento.
+          </p>
+
+
+          <div class="negotiation-box">
+
+            <strong>
+              💰 Possibilidade de negociação
+            </strong>
+
+            <p>
+              Dependendo da quantidade de equipamentos e do número
+              de diárias, nossa equipe poderá negociar o valor.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Formulário do cliente -->
+        <form id="customerForm" class="customer-form">
+
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="nome">
+                Nome *
+              </label>
+
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                placeholder="Seu nome"
+                autocomplete="name"
+                required
+              >
+            </div>
+
+
+            <div class="field">
+              <label for="telefone">
+                Telefone / WhatsApp *
+              </label>
+
+              <input
+                id="telefone"
+                name="telefone"
+                type="tel"
+                placeholder="(00) 00000-0000"
+                autocomplete="tel"
+                required
+              >
+            </div>
+
+
+            <div class="field field-full">
+              <label for="endereco">
+                Endereço da obra *
+              </label>
+
+              <input
+                id="endereco"
+                name="endereco"
+                type="text"
+                placeholder="Rua, número, bairro..."
+                required
+              >
+            </div>
+
+
+            <div class="field">
+              <label for="cidade">
+                Cidade *
+              </label>
+
+              <input
+                id="cidade"
+                name="cidade"
+                type="text"
+                placeholder="Sua cidade"
+                autocomplete="address-level2"
+                required
+              >
+            </div>
+
+          </div>
+
+
+          <!-- Resumo antes do envio -->
+          <div class="form-quote-preview">
+
+            <h3>
+              Resumo da solicitação
+            </h3>
+
+            <div id="formQuoteItems"></div>
+
+            <div class="form-total">
+
+              <span>
+                Total estimado
+              </span>
+
+              <strong id="formQuoteTotal">
+                R$ 0,00
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="form-actions">
+
+            <button
+              id="backToEquipmentBtn"
+              class="btn btn-outline"
+              type="button"
+            >
+              Voltar
+            </button>
+
+            <button
+              class="btn btn-primary btn-large"
+              type="submit"
+            >
+              Enviar solicitação pelo WhatsApp
+            </button>
+
+          </div>
+
+
+          <p class="form-disclaimer">
+            O envio representa uma solicitação de orçamento.
+            Não existe pagamento pelo site.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       RODAPÉ
+       ========================================================= -->
+  <footer id="contato" class="footer">
+
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+
+        <img
+          src="assets/logo-cloc.png"
+          alt="C'LOC"
+        >
+
+        <p>
+          Locação de mini caçambas e equipamentos para obras.
+        </p>
+
+      </div>
+
+
+      <div class="footer-contact">
+
+        <h3>
+          Fale com a C'LOC
+        </h3>
+
+        <a
+          data-whatsapp-general
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+        <!--
+          Altere o Instagram no CONFIG do script.js.
+        -->
+        <a
+          id="instagramLink"
+          href="https://www.instagram.com/cloclocacoes7"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <!--
+          Altere a localização no CONFIG do script.js.
+        -->
+        <a
+          id="locationLink"
+          href="https://www.google.com/maps/place/INOVARE+AMBIENTES/@-3.6474758,-45.3783946,19z/data=!4m10!1m2!2m1!1sinovare+ambientes+planejados!3m6!1s0x92ca9d8337f70b87:0x8437b741fe72e6b8!8m2!3d-3.6474757!4d-45.3772684!15sChxpbm92YXJlIGFtYmllbnRlcyBwbGFuZWphZG9zkgENbWlsbHdvcmtfc2hvcOABAA!16s%2Fg%2F11nv2j0vgb?entry=ttu&g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Localização
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        © <span id="currentYear"></span>
+        C'LOC. Todos os direitos reservados.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       MODAL DE AVISOS
+       ========================================================= -->
+  <div
+    id="messageModal"
+    class="modal hidden"
+    aria-hidden="true"
+  >
+
+    <div class="modal-backdrop"></div>
+
+    <div
+      class="modal-card"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+
+      <button
+        id="modalClose"
+        class="modal-close"
+        type="button"
+        aria-label="Fechar"
+      >
+        ×
+      </button>
+
+      <div id="modalIcon" class="modal-icon">
+        !
+      </div>
+
+      <h3 id="modalTitle">
+        Atenção
+      </h3>
+
+      <p id="modalMessage"></p>
+
+      <button
+        id="modalOk"
+        class="btn btn-primary"
+        type="button"
+      >
+        OK
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
