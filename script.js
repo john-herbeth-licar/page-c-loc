@@ -200,7 +200,7 @@ const EQUIPAMENTOS = [
 
     nome: "ANDAIME TUBULAR",
 
-    precoDiaria: 2,00,
+    precoDiaria: 2.0,
 
     imagem: "assets/andaime.jpg",
 
