@@ -202,7 +202,7 @@ const EQUIPAMENTOS = [
 
     precoDiaria: 2,00,
 
-    imagem: "assets/andaime.png",
+    imagem: "assets/andaime.jpg",
 
     descricao: "Novo equipamento da C'LOC.",
 
