@@ -704,7 +704,7 @@ function renderizarEquipamentos() {
             <span class="equipment-daily-value" data-id="${equipamento.id}">${moeda(precoDiariaExibido(equipamento, 0))}</span>
 
             <small>
-              / diária
+              / ${equipamento.id === 4 ? "PEÇA" : "diária"}
             </small>
 
           </p>
