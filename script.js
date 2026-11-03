@@ -206,7 +206,7 @@ const EQUIPAMENTOS = [
 
     descricao: "Novo equipamento da C'LOC.",
 
-    status: "em-breve",
+    status: "disponivel",
 
     mensagemIndisponivel: "Este equipamento está temporariamente indisponível.",
 
