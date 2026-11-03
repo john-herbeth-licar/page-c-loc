@@ -198,11 +198,11 @@ const EQUIPAMENTOS = [
   {
     id: 4,
 
-    nome: "EM BREVE DIPONÍVEL PARA LOCAÇÃO!",
+    nome: "ANDAIME TUBULAR",
 
-    precoDiaria: 99.9,
+    precoDiaria: 2,00,
 
-    imagem: "",
+    imagem: "assets/andaime.png",
 
     descricao: "Novo equipamento da C'LOC.",
 
@@ -265,7 +265,7 @@ const EQUIPAMENTOS = [
   {
     id: 7,
 
-    nome: "EM BREVE DIPONÍVEL PARA LOCAÇÃO!7",
+    nome: "EM BREVE DIPONÍVEL PARA LOCAÇÃO!",
 
     precoDiaria: 99.9,
 
@@ -307,7 +307,7 @@ const EQUIPAMENTOS = [
   {
     id: 9,
 
-    nome: "EM BREVE DIPONÍVEL PARA LOCAÇÃO!9",
+    nome: "EM BREVE DIPONÍVEL PARA LOCAÇÃO!",
 
     precoDiaria: 99.9,
 
